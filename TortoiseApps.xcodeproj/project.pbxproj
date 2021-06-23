@@ -13,6 +13,10 @@
 		579D812326808987008D2856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579D812126808987008D2856 /* Main.storyboard */; };
 		579D812526808989008D2856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579D812426808989008D2856 /* Assets.xcassets */; };
 		579D812826808989008D2856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579D812626808989008D2856 /* LaunchScreen.storyboard */; };
+		579D813226808ABA008D2856 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D813026808ABA008D2856 /* MainTableViewCell.swift */; };
+		579D813326808ABA008D2856 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 579D813126808ABA008D2856 /* MainTableViewCell.xib */; };
+		579D813B2680A07C008D2856 /* Tortoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D813A2680A07C008D2856 /* Tortoise.swift */; };
+		579D813E2680A08C008D2856 /* DummyTortoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D813D2680A08C008D2856 /* DummyTortoise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		579D812426808989008D2856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		579D812726808989008D2856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		579D812926808989008D2856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		579D813026808ABA008D2856 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		579D813126808ABA008D2856 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		579D813A2680A07C008D2856 /* Tortoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tortoise.swift; sourceTree = "<group>"; };
+		579D813D2680A08C008D2856 /* DummyTortoise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTortoise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		579D811A26808987008D2856 /* TortoiseApps */ = {
 			isa = PBXGroup;
 			children = (
-				579D811B26808987008D2856 /* AppDelegate.swift */,
-				579D811D26808987008D2856 /* SceneDelegate.swift */,
-				579D811F26808987008D2856 /* ViewController.swift */,
-				579D812126808987008D2856 /* Main.storyboard */,
+				579D81352680A010008D2856 /* Base */,
+				579D81392680A055008D2856 /* Model */,
+				579D81372680A020008D2856 /* Controller */,
+				579D81382680A038008D2856 /* View */,
 				579D812426808989008D2856 /* Assets.xcassets */,
-				579D812626808989008D2856 /* LaunchScreen.storyboard */,
 				579D812926808989008D2856 /* Info.plist */,
 			);
 			path = TortoiseApps;
+			sourceTree = "<group>";
+		};
+		579D81352680A010008D2856 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				579D811B26808987008D2856 /* AppDelegate.swift */,
+				579D811D26808987008D2856 /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		579D81372680A020008D2856 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				579D811F26808987008D2856 /* ViewController.swift */,
+				579D813026808ABA008D2856 /* MainTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		579D81382680A038008D2856 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				579D812126808987008D2856 /* Main.storyboard */,
+				579D813126808ABA008D2856 /* MainTableViewCell.xib */,
+				579D812626808989008D2856 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		579D81392680A055008D2856 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				579D813A2680A07C008D2856 /* Tortoise.swift */,
+				579D813D2680A08C008D2856 /* DummyTortoise.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +170,7 @@
 			files = (
 				579D812826808989008D2856 /* LaunchScreen.storyboard in Resources */,
 				579D812526808989008D2856 /* Assets.xcassets in Resources */,
+				579D813326808ABA008D2856 /* MainTableViewCell.xib in Resources */,
 				579D812326808987008D2856 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				579D812026808987008D2856 /* ViewController.swift in Sources */,
+				579D813E2680A08C008D2856 /* DummyTortoise.swift in Sources */,
+				579D813B2680A07C008D2856 /* Tortoise.swift in Sources */,
 				579D811C26808987008D2856 /* AppDelegate.swift in Sources */,
+				579D813226808ABA008D2856 /* MainTableViewCell.swift in Sources */,
 				579D811E26808987008D2856 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
